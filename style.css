@@ -1,11 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #2d8d8c;
+}
+h1{
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    text-align: center;
+    
 }
 .game-container {
     text-align: center;
@@ -15,12 +25,14 @@ body {
     grid-template-columns: repeat(3, 100px);
     grid-gap: 5px;
     margin-top: 20px;
+    justify-content: center;
+    margin-top: 30px;
 }
 .cell {
     width: 100px;
     height: 100px;
-    background-color: #fff;
-    border: 2px solid #333;
+    background-color: beige;
+    border: 2px solid #415041;
     font-size: 2em;
     display: flex;
     justify-content: center;
@@ -28,18 +40,42 @@ body {
     cursor: pointer;
 }
 .cell:hover {
-    background-color: #f5f5f5;
+    background-color: #d4ebde;
 }
 #status {
     margin-top: 20px;
     font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
 }
 button {
-    margin-top: 20px;
     padding: 10px 20px;
     font-size: 1em;
+    border: 1px solid rgb(193, 216, 215);
     cursor: pointer;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(49, 190, 169);
+    color: #ffffff;
 }
+button,.btn {
+ margin-left: 45%;
+ margin-top: 20px;
+}
+
 #player-form {
-    margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+input{
+     height: 15px;
+     border: 1px solid rgb(193, 216, 215);
+     padding: 10px;
+     border-radius: 10px;
+     background-color: beige;
 }
